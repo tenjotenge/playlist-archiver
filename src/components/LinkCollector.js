@@ -1,40 +1,48 @@
 import React, { useState } from 'react';
-import handler from '../../pages/api/archive-spotify-playlist-api-endpoint'; 
 
 function LinkCollector() {
   const [playlistURL, setPlaylistURL] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleChange = (event) => {
-    setPlaylistURL(event.target.value);
-  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  const handleDownload = async () => {
     try {
-      const response = await handler({ method: 'POST', body: JSON.stringify({ playlistURL }) });
+      const response = await fetch('/api/archive-spotify-playlist-api-endpoint', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ playlistURL }),
+      });
 
-      const blob = await response.blob();
-
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'playlist.json';
-      a.style.display = 'none';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
+      if (response.ok) {
+        const data = await response.json();
+        setMessage(data.message);
+      } else {
+        const errorData = await response.json();
+        setMessage(errorData.error);
+      }
     } catch (error) {
-      console.error('Error:', error);
+      setMessage('An error occurred while archiving the playlist.');
     }
   };
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Enter Playlist Link"
-        value={playlistURL}
-        onChange={handleChange}
-      />
-      <button onClick={handleDownload}>Download JSON</button>
+      <h2>Archive Spotify Playlist</h2>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Spotify Playlist URL:
+          <input
+            type="text"
+            value={playlistURL}
+            onChange={(e) => setPlaylistURL(e.target.value)}
+          />
+        </label>
+        <button type="submit">Archive</button>
+      </form>
+      <p>{message}</p>
     </div>
   );
 }

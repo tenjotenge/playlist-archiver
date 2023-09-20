@@ -1,5 +1,5 @@
 const SpotifyWebApi = require('spotify-web-api-node');
-const fs = require('fs');
+const fs = require('fs/promises');
 
 const spotifyApi = new SpotifyWebApi({
   clientId: '269d2e30798546faa9630a94e7f9a23b',
@@ -38,30 +38,8 @@ async function exportSpotifyPlaylist(playlistURL) {
 
     const fileName = `${playlistName}-playlist.json`;
 
-    // Create a write stream to the JSON file
-    const writeStream = fs.createWriteStream(fileName);
-
-    // Write the opening bracket for the JSON array
-    writeStream.write('[');
-
-    // Iterate through the queue and write data to the file
-    while (playlistDataQueue.length > 0) {
-      const item = playlistDataQueue.shift();
-
-      // Append the item to the JSON file
-      writeStream.write(JSON.stringify(item, null, 2));
-
-      // Add a comma and newline if there are more items in the queue
-      if (playlistDataQueue.length > 0) {
-        writeStream.write(',\n');
-      }
-    }
-
-    // Write the closing bracket for the JSON array
-    writeStream.write(']\n');
-
-    // Close the write stream
-    writeStream.end();
+    // Use fs.promises.writeFile for writing to the JSON file
+    await fs.writeFile(fileName, JSON.stringify(playlistDataQueue, null, 2));
 
     console.log(`Playlist data saved to ${fileName}`);
   } catch (err) {
