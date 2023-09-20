@@ -1,27 +1,22 @@
 import React, { useState } from 'react';
-
+import handler from '../../pages/api/archive-spotify-playlist-api-endpoint'; 
 
 function LinkCollector() {
   const [playlistURL, setPlaylistURL] = useState('');
-  
+
   const handleChange = (event) => {
     setPlaylistURL(event.target.value);
   };
 
   const handleDownload = async () => {
-    // Call the downloadPlaylist function with the entered playlistURL
-    // Implement the downloadPlaylist function logic here
-    // Replace 'YOUR_DOWNLOAD_FUNCTION' with your actual function
     try {
-      const response = await YOUR_DOWNLOAD_FUNCTION(playlistURL);
-      
-      // Assuming your download function returns a Blob or File
+      const response = await handler({ method: 'POST', body: JSON.stringify({ playlistURL }) });
+
       const blob = await response.blob();
-      
-      // Create a temporary link element to trigger the download
+
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = 'playlist.json'; // Specify the filename you want
+      a.download = 'playlist.json';
       a.style.display = 'none';
       document.body.appendChild(a);
       a.click();
