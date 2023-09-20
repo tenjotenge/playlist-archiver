@@ -1,48 +1,40 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function LinkCollector() {
   const [playlistURL, setPlaylistURL] = useState('');
   const [message, setMessage] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  
+  const handleDownload = async () => {
     try {
-      const response = await fetch('/api/archive-spotify-playlist-api-endpoint', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ playlistURL }),
+      const response = await axios.post('/api/archive-spotify-playlist-api-endpoint', {
+        playlistURL,
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        setMessage(data.message);
-      } else {
-        const errorData = await response.json();
-        setMessage(errorData.error);
-      }
+      const blob = new Blob([JSON.stringify(response.data)], {
+        type: 'application/json',
+      });
+      
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${playlistName}-playlist.json`; // Specify the desired file name
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
     } catch (error) {
-      setMessage('An error occurred while archiving the playlist.');
+      console.error('Error archiving playlist:', error);
     }
+  };
+
+  const handleChange = (event) => {
+    setPlaylistURL(event.target.value);
   };
 
   return (
     <div>
-      <h2>Archive Spotify Playlist</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Spotify Playlist URL:
-          <input
-            type="text"
-            value={playlistURL}
-            onChange={(e) => setPlaylistURL(e.target.value)}
-          />
-        </label>
-        <button type="submit">Archive</button>
-      </form>
-      <p>{message}</p>
+      <input type="text" placeholder="Enter Spotify Playlist Link" onChange={handleChange} />
+      <button onClick={handleDownload}>Download Playlist</button>
     </div>
   );
 }

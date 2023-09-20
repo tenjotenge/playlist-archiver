@@ -42,6 +42,12 @@ async function exportSpotifyPlaylist(playlistURL) {
     await fs.writeFile(fileName, JSON.stringify(playlistDataQueue, null, 2));
 
     console.log(`Playlist data saved to ${fileName}`);
+
+    return {
+        success: true,
+        data: { message: `Playlist data saved to ${fileName}` },
+    };
+    
   } catch (err) {
     // Handle errors gracefully and return an error object
     return {
