@@ -38,8 +38,8 @@ async function exportSpotifyPlaylist(playlistURL) {
     });
 
     const fileName = `${playlistName}-playlist.json`;
-    const filePath = path.join('public', 'downloads', fileName);
-  
+    const filePath = path.join(__dirname, '..', 'public', 'downloads', fileName); // Construct the complete file path
+
     // Use fs.promises.writeFile to write the JSON file to the desired location
     await fs.writeFile(filePath, JSON.stringify(playlistDataQueue, null, 2));
 
