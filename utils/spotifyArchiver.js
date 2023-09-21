@@ -1,5 +1,6 @@
 const SpotifyWebApi = require('spotify-web-api-node');
 const fs = require('fs/promises');
+require('dotenv').config();
 
 const spotifyApi = new SpotifyWebApi({
   clientId: '269d2e30798546faa9630a94e7f9a23b',
