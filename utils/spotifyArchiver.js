@@ -3,8 +3,8 @@ const fs = require('fs/promises');
 require('dotenv').config();
 
 const spotifyApi = new SpotifyWebApi({
-  clientId: '269d2e30798546faa9630a94e7f9a23b',
-  clientSecret: '36b051528cd84c869db13d4bf61dd54a',
+  clientId: process.env.SPOTIFY_CLIENT_ID,
+  clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
 });
 
 // Function to export Spotify playlist data to a JSON object
