@@ -1,9 +1,13 @@
-// components/DownloadButton.js
+import React from 'react';
 
-export default function DownloadButton() {
+function DownloadButton({ fileName }) {
+  const downloadUrl = `/downloads/${fileName}`;
+
   return (
-    <a href="/api/archive-spotify-playlist-api-endpoint" download="playlist.json">
+    <a href={downloadUrl} download>
       Download Playlist
     </a>
   );
 }
+
+export default DownloadButton;
