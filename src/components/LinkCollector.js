@@ -13,7 +13,7 @@ function LinkCollector() {
   // Modify this function to trigger the API call when the user clicks the button
   const handleDownload = () => {
     axios
-      .post('/api/archive-spotify-playlist-api-endpoint', {
+      .post('/api/archive-endpoint', {
         playlistURL,
       })
       .then(() => {
