@@ -12,16 +12,25 @@ function LinkCollector() {
 
   // Modify this function to trigger the API call when the user clicks the button
   const handleDownload = () => {
-    axios
-      .post('/api/archive-endpoint', {
+    fetch('/api/archive-endpoint', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
         playlistURL,
-      })
-      .then(() => {
-        // Handle success if needed
-        console.log('Playlist archived successfully');
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Handle success if needed
+          console.log('Playlist archived successfully');
+        } else {
+          throw new Error(`Error archiving playlist: ${response.status}`);
+        }
       })
       .catch((error) => {
-        console.error('Error archiving playlist:', error);
+        console.error(error);
       });
   };
 
