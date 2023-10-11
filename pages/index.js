@@ -8,7 +8,6 @@ function Home() {
       <h1>Welcome to Your Playlist Archiver</h1>
       <p>Enter a Spotify playlist link to archive it.</p>
       <LinkCollector />
-      <DownloadButton />
     </div>
   );
 }
