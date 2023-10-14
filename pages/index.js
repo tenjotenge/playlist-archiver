@@ -1,12 +1,11 @@
 import React from 'react';
 import LinkCollector from '../src/components/LinkCollector';
-import DownloadButton from '@/components/DownloadButton';
+import Banner from '../src/components/Banner';
 
 function Home() {
   return (
     <div>
-      <h1>Welcome to Your Playlist Archiver</h1>
-      <p>Enter a Spotify playlist link to archive it.</p>
+      <Banner />
       <LinkCollector />
     </div>
   );
