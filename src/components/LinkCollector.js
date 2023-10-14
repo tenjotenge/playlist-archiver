@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import DownloadButton from './DownloadButton';
+import classNames from 'classnames/bind';
+import styles from './LinkCollector.module.css';
+
+const cx = classNames.bind(styles);
+
 
 function LinkCollector() {
   const [playlistURL, setPlaylistURL] = useState('');
