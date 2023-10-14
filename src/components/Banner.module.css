@@ -11,11 +11,12 @@
 }
 
 .banner-heading {
-  font-size: 80px;
+  font-size: 60px;
+  font-family: 'Tangerine', cursive;
 }
 
 .banner-text {
-  font-size: 60px;
+  font-size: 40px;
   font-family: 'Tangerine', cursive;
   text-decoration: none;
 }

@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className={cx('banner-container')}>
       <h1 className={cx('banner-heading')}>Welcome to The Playlist Archiver</h1>
-      <p className={cx('banner-instructions')}>Enter a Spotify playlist link to archive it.</p>
+      <p className={cx('banner-text')}>Enter a Spotify playlist link to archive it.</p>
     </div>
   );
 };
