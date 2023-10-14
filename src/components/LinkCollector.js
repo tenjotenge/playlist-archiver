@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import DownloadButton from './DownloadButton'; // Import your DownloadButton component
+import DownloadButton from './DownloadButton';
 
 function LinkCollector() {
   const [playlistURL, setPlaylistURL] = useState('');
