@@ -17,7 +17,7 @@ function LinkCollector() {
   // Modify this function to trigger the API call when the user clicks the button
   const handleDownload = async () => {
     try {
-      const response = await axios.post('/api/exportSpotifyPlaylist', {
+      const response = await axios.post('https://playlist-archiver-six.vercel.app/api/exportSpotifyPlaylist', {
         playlistURL,
       });
 
