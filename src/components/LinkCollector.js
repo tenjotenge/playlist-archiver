@@ -40,10 +40,14 @@ function LinkCollector() {
   };
 
   return (
-    <div>
-      <input type="text" placeholder="Enter Spotify Playlist Link" onChange={handleChange} />
-      <button onClick={handleDownload}>Archive Playlist</button>
-      <DownloadButton fileName={`${playlistName}-playlist.json`} />
+    <div xlassName={cx('lc-container')}>
+      <div className={cx('input-container')}>
+        <input className={cx('input-box')} type="text" placeholder="Enter Spotify Playlist Link" onChange={handleChange} />
+      </div>
+      <div className={cx('buttons-container')}>
+        <button className={cx('archive-button')} onClick={handleDownload}>Archive Playlist</button>
+        <DownloadButton fileName={`${playlistName}-playlist.json`} />
+      </div>
     </div>
   );
 }
