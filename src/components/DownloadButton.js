@@ -8,10 +8,11 @@ function DownloadButton() {
   const downloadUrl = '/public/downloads/playlist.json';
 
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = downloadUrl;
-    link.download = 'playlist.json';
-    link.click();
+    const url = '/downloads/playlist.json'; // Adjust the URL as needed
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = 'playlist.json';
+    anchor.click();
   };
 
   return (
