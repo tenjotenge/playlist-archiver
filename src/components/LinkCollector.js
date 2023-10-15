@@ -13,30 +13,23 @@ function LinkCollector() {
   const handleChange = (event) => {
     setPlaylistURL(event.target.value);
   };
-  const playlistName = ''
 
   // Modify this function to trigger the API call when the user clicks the button
-  const handleDownload = () => {
-    fetch('/api/archive-endpoint', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
+  const handleDownload = async () => {
+    try {
+      const response = await axios.post('/api/exportSpotifyPlaylist', {
         playlistURL,
-      }),
-    })
-      .then((response) => {
-        if (response.ok) {
-          // Handle success if needed
-          console.log('Playlist archived successfully');
-        } else {
-          throw new Error(`Error archiving playlist: ${response.status}`);
-        }
-      })
-      .catch((error) => {
-        console.error(error);
       });
+
+      if (response.status === 200) {
+        // Handle success if needed
+        console.log('Playlist archived successfully');
+      } else {
+        throw new Error(`Error archiving playlist: ${response.status}`);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -46,7 +39,7 @@ function LinkCollector() {
       </div>
       <div className={cx('buttons-container')}>
         <button className={cx('archive-button')} onClick={handleDownload}>Archive Playlist</button>
-        <DownloadButton fileName={`${playlistName}-playlist.json`} />
+        <DownloadButton fileName={`playlist.json`} />
       </div>
     </div>
   );
