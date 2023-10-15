@@ -40,7 +40,7 @@ function LinkCollector() {
   };
 
   return (
-    <div xlassName={cx('lc-container')}>
+    <div className={cx('lc-container')}>
       <div className={cx('input-container')}>
         <input className={cx('input-box')} type="text" placeholder="Enter Spotify Playlist Link" onChange={handleChange} />
       </div>
