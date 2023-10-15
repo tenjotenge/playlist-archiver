@@ -5,12 +5,19 @@ import styles from './DownloadButton.module.css';
 const cx = classNames.bind(styles);
 
 function DownloadButton({ fileName }) {
-  const downloadUrl = `/downloads/${fileName}`;
+  const downloadUrl = '/public/downloads/playlist.json';
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.download = fileName;
+    link.click();
+  };
 
   return (
-    <a href={downloadUrl} download>
+    <button className={cx('download-button')} onClick={handleDownload}>
       Download Playlist
-    </a>
+    </button>
   );
 }
 
