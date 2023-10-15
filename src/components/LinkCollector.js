@@ -39,7 +39,7 @@ function LinkCollector() {
       </div>
       <div className={cx('buttons-container')}>
         <button className={cx('archive-button')} onClick={handleDownload}>Archive Playlist</button>
-        <DownloadButton fileName={`playlist.json`} />
+        <DownloadButton/>
       </div>
     </div>
   );
