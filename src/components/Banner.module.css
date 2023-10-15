@@ -1,12 +1,11 @@
 /* src/components/Banner.module.css */
 
 .banner-container {
-  background-color: #e6e6fa; /* Lavender */
-  color: #32cd32; /* Lime Green */
-  padding: 20px;
+  color: #1ED760; /*Spotify Green*/
+  background-color: darkgray; 
+  padding: 1px;
   text-align: center;
   border-radius: 10px; 
-  margin-bottom: 20px; 
   text-decoration: none;
 }
 

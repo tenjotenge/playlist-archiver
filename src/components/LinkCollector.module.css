@@ -5,13 +5,15 @@
     flex-direction: column;
     align-items: center; /* Center items horizontally */
     height: 100vh;
+    background-color: black;
+    border-radius: 10px;
   }
   
   .input-container {
+    margin-top: 10%;
     width: 80%;
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Add spacing between the input box and buttons if needed */
   }
   
   .input-box {
@@ -20,6 +22,7 @@
     border: 1px solid #ccc;
     border-radius: 20px; /* You can adjust the value to change the roundness */
     outline: none;
+    text-align: center;
   }
   
   .buttons-container {
