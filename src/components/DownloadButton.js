@@ -11,7 +11,7 @@ function DownloadButton() {
     const url = '/downloads/playlist.json'; // Adjust the URL as needed
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = 'playlist.json';
+    anchor.download = 'playlist';
     anchor.click();
   };
 
