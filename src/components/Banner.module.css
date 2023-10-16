@@ -1,7 +1,7 @@
 /* src/components/Banner.module.css */
 
 .banner-container {
-  color: black; /*Spotify Green*/
+  color: black; 
   background-color: #007bff; 
   padding: 1px;
   text-align: center;

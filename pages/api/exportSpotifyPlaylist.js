@@ -22,6 +22,7 @@ export default async (req, res) => {
     // Fetch the playlist data
     const playlistInfo = await spotifyApi.getPlaylist(playlistId);
     const playlistName = playlistInfo.body.name; // Get the playlist name
+    console.log(`${playlistName} has been fetched.`)
 
     // Fetch the playlist tracks
     const playlistTracks = await spotifyApi.getPlaylistTracks(playlistId);
@@ -37,7 +38,7 @@ export default async (req, res) => {
 
     // Save the playlist data to a JSON file with the playlist name
     await fs.writeFile(fileName, JSON.stringify(playlistData, null, 2));
-    console.log(`Playlist data saved to ${fileName}`);
+    console.log(`${playlistName} Playlist data saved to ${fileName}`);
 
     res.status(200).json({ message: `Playlist data saved to ${fileName}` });
   } catch (err) {
