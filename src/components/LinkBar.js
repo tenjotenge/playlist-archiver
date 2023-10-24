@@ -2,21 +2,18 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './LinkBar.module.css';
+import GithubButton from './GithubButton';
+import EmailButton from './EmailButton';
+import PortfolioButton from './PortfolioButton';
 
 const cx = classNames.bind(styles);
 
 const LinkBar = () => {
   return (
     <div className={cx('lb-container')}>
-      <a href="https://github.com/tenjotenge" target="_blank" rel="noopener noreferrer">
-        <img src="github.png" alt="GitHub" />
-      </a>
-      <a href="https://tenjotenge.com" target="_blank" rel="noopener noreferrer">
-        <img src="portfolio.png" alt="Portfolio" />
-      </a>
-      <button onClick={() => console.log('Third button clicked')}>
-        <img src="third.png" alt="Third" />
-      </button>
+      <GithubButton />
+      <PortfolioButton />
+      <EmailButton />
     </div>
   );
 };
