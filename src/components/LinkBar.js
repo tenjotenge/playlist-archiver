@@ -8,10 +8,10 @@ const cx = classNames.bind(styles);
 const LinkBar = () => {
   return (
     <div className={cx('lb-container')}>
-      <a href="https://github.com/yourgithubusername" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/tenjotenge" target="_blank" rel="noopener noreferrer">
         <img src="github.png" alt="GitHub" />
       </a>
-      <a href="https://yourportfoliowebsite.com" target="_blank" rel="noopener noreferrer">
+      <a href="https://tenjotenge.com" target="_blank" rel="noopener noreferrer">
         <img src="portfolio.png" alt="Portfolio" />
       </a>
       <button onClick={() => console.log('Third button clicked')}>
