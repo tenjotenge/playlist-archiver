@@ -3,6 +3,7 @@ import axios from 'axios';
 import DownloadButton from './DownloadButton';
 import classNames from 'classnames/bind';
 import styles from './LinkCollector.module.css';
+import LinkBar from './LinkBar';
 
 const cx = classNames.bind(styles);
 
@@ -41,6 +42,7 @@ function LinkCollector() {
         <button className={cx('archive-button')} onClick={handleDownload}>Archive Playlist</button>
         <DownloadButton/>
       </div>
+      <LinkBar />
     </div>
   );
 }

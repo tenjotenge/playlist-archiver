@@ -8,7 +8,6 @@ function Home() {
     <div>
       <Banner />
       <LinkCollector />
-      <LinkBar />
     </div>
   );
 }

@@ -1,14 +1,16 @@
 /* LinkBar.module.css */
 .link-bar {
-    background-color: #007bff; /* Change the background color to blue */
+    background-color: white; /* Change the background color to blue */
     padding: 10px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 20%;
+    height: 60px;
+
   }
   
   .link-ul {
@@ -19,7 +21,7 @@
   }
   
   .link-item {
-    background-color: #007bff; /* Change the background color to blue */
+    background-color: white; /* Change the background color to blue */
     padding: 5px 10px;
     border-radius: 10px;
     margin: 0 10px;
@@ -33,7 +35,7 @@
     top: 50%;
     right: -15px; /* Adjust the position of the line */
     height: 100%; /* Make the line twice as thick */
-    border-left: 4px solid white; /* Make the line twice as thick */
+    border-left: 4px solid black; /* Make the line twice as thick */
     border-radius: 2px; /* Add rounded edges to the line */
     transform: translateY(-50%); /* Center the line vertically */
   }

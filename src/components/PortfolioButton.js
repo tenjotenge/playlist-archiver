@@ -7,9 +7,9 @@ const cx = classNames.bind(styles);
 
 const PortfolioButton = () => {
   return (
-    <div className={cx('portfolio-link')}>
-      <a href="https://yourportfolio.com" target="_blank" rel="noopener noreferrer">
-        My Portfolio
+    <div className={cx('portfolio-link', 'link-item')}>
+      <a href="YOUR_PORTFOLIO_URL" target="_blank" rel="noopener noreferrer">
+        <img src="/logos/portfolio-outline.svg" alt="Portfolio" style={{ width: '40px', height: '40px' }} />
       </a>
     </div>
   );
