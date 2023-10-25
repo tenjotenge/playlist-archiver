@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 const GitHubButton = () => {
   return (
-    <div className={cx('github-link', 'link-item')}>
+    <div className={cx('github-link', 'link-item')} data-tooltip="My Github">
       <a href="https://github.com/tenjotenge" target="_blank" rel="noopener noreferrer">
         <img src="/logos/github-outline.svg" alt="GitHub" style={{ width: '40px', height: '40px' }} />
       </a>

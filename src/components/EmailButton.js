@@ -7,8 +7,8 @@ const cx = classNames.bind(styles);
 
 const EmailButton = () => {
   return (
-    <div className={cx('email-link', 'link-item')}>
-      <a href="https://github.com/nayatrov" target="_blank" rel="noopener noreferrer">
+    <div className={cx('email-link', 'link-item')} data-tooltip="Email Me">
+      <a href="mailto:nayatrov@outlook.com">
         <img src="/logos/email-outline.svg" alt="Email" style={{ width: '40px', height: '40px' }} />
       </a>
     </div>
