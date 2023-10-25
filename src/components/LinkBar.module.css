@@ -1,5 +1,41 @@
-/* src/components/LinkBar.module.css */
-
-.lb-container {
-
-}
+/* LinkBar.module.css */
+.link-bar {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .link-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center; /* Center the links horizontally */
+  }
+  
+  .link-item {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: relative; /* Add positioning to create the line effect */
+  }
+  
+  /* Add the lines between the links */
+  .link-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px; /* Adjust the position of the line */
+    height: 80%; /* Height of the line */
+    border-left: 2px solid white; /* Add black lines between the links */
+    transform: translateY(-50%); /* Center the line vertically */
+  }
+  
+  /* Remove the line from the last link */
+  .link-item:last-child::after {
+    display: none;
+  }
+  

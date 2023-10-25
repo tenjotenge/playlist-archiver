@@ -10,11 +10,19 @@ const cx = classNames.bind(styles);
 
 const LinkBar = () => {
   return (
-    <div className={cx('lb-container')}>
-      <GithubButton />
-      <PortfolioButton />
-      <EmailButton />
-    </div>
+    <nav className={cx('link-bar')}>
+      <ul className={cx('link-ul')}>
+        <li className={cx('link-item')}>
+          <GithubButton />
+        </li>
+        <li className={cx('link-item')}>
+          <PortfolioButton />
+        </li>
+        <li className={cx('link-item')}>
+          <EmailButton />
+        </li>
+      </ul>
+    </nav>
   );
 };
 
