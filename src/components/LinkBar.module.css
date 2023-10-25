@@ -1,11 +1,14 @@
 /* LinkBar.module.css */
 .link-bar {
-    background-color: #333;
+    background-color: #007bff; /* Change the background color to blue */
     padding: 10px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
   }
   
   .link-ul {
@@ -16,21 +19,22 @@
   }
   
   .link-item {
-    background-color: #333;
+    background-color: #007bff; /* Change the background color to blue */
     padding: 5px 10px;
     border-radius: 10px;
     margin: 0 10px;
     position: relative; /* Add positioning to create the line effect */
   }
   
-  /* Add the lines between the links */
+  /* Make the lines between the links twice as thick and give them rounded edges */
   .link-item::after {
     content: '';
     position: absolute;
     top: 50%;
     right: -15px; /* Adjust the position of the line */
-    height: 80%; /* Height of the line */
-    border-left: 2px solid white; /* Add black lines between the links */
+    height: 100%; /* Make the line twice as thick */
+    border-left: 4px solid white; /* Make the line twice as thick */
+    border-radius: 2px; /* Add rounded edges to the line */
     transform: translateY(-50%); /* Center the line vertically */
   }
   
@@ -39,3 +43,8 @@
     display: none;
   }
   
+  /* class used within button components */
+.link-item img {
+    max-width: 100%;
+    max-height: 100%;
+  }
