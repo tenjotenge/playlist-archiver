@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 35%;
     margin: 0 auto;
     margin-top: 20%;
     height: 60px;
@@ -33,7 +33,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    right: -15px; /* Adjust the position of the line */
+    right: -10px; /* Adjust the position of the line */
     height: 100%; /* Make the line twice as thick */
     border-left: 4px solid black; /* Make the line twice as thick */
     border-radius: 2px; /* Add rounded edges to the line */
