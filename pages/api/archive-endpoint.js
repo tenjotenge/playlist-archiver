@@ -1,6 +1,13 @@
 // pages/api/archive-spotify-playlist-api-endpoint.js
 import spotifyArchiver from '../../utils/spotifyArchiver';
 
+
+// This file is no longer used in the project and was swapped out
+// for exportSpotifyPlaylist.js
+
+// only keeping this here in case I need to revert back to the
+// original implementation of the project
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { playlistURL } = req.body;
