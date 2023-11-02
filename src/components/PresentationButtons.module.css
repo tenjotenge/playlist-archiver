@@ -9,7 +9,7 @@
   
   .presentation-button {
     padding: 10px 20px;
-    background-color: #e63df5;
+    background-color: #007bff; /* #e63df5 for pink */
     color: #fff;
     border: none;
     border-radius: 20px;

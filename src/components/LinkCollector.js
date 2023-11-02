@@ -16,22 +16,27 @@ function LinkCollector() {
     setPlaylistURL(event.target.value);
   };
 
-  // Modify this function to trigger the API call when the user clicks the button
-  const handleDownload = async () => {
-    try {
-      const response = await axios.post('https://playlist-archiver-six.vercel.app/api/exportSpotifyPlaylist', {
+  // Trigger the API call when the user clicks the button using fetch
+  const handleDownload = () => {
+    fetch('https://playlist-archiver-six.vercel.app/api/exportSpotifyPlaylist', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
         playlistURL,
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          console.log('Playlist archived successfully');
+        } else {
+          throw new Error(`Error archiving playlist: ${response.status}`);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
       });
-
-      if (response.status === 200) {
-        // Handle success if needed
-        console.log('Playlist archived successfully');
-      } else {
-        throw new Error(`Error archiving playlist: ${response.status}`);
-      }
-    } catch (error) {
-      console.error(error);
-    }
   };
 
   return (
