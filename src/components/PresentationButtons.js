@@ -16,14 +16,14 @@ const PresentationButtons = () => {
         id={cx('pb-1')}
         onClick={() => openInNewTab('/progress-report.pdf')}
       >
-        Progress Report
+        Progress Report Presentation
       </button>
       <button
         className={cx('presentation-button')}
         id={cx('pb-2')}
         onClick={() => openInNewTab('/final-presentation.pdf')}
       >
-        Final Presentation
+        Final Project Presentation
       </button>
     </div>
   );
