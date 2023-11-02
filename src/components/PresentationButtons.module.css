@@ -1,0 +1,27 @@
+/* PresentationButtons.module.css */
+/* PresentationButtons.module.css */
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* Use space-between to add space between the buttons */
+    margin-top: 5%; /* Add a 5% top margin */
+  }
+  
+  .presentation-button {
+    padding: 10px 20px;
+    background-color: #e63df5;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  #pb-1 {
+    margin-right: 3%;
+  }
+
+  #pb-2 {
+    margin-left: 3%;
+  }

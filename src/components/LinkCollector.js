@@ -4,6 +4,7 @@ import DownloadButton from './DownloadButton';
 import classNames from 'classnames/bind';
 import styles from './LinkCollector.module.css';
 import LinkBar from './LinkBar';
+import PresentationButtons from './PresentationButtons';
 
 const cx = classNames.bind(styles);
 
@@ -42,6 +43,7 @@ function LinkCollector() {
         <button className={cx('archive-button')} onClick={handleDownload}>Archive Playlist</button>
         <DownloadButton/>
       </div>
+      <PresentationButtons />
       <LinkBar />
     </div>
   );
