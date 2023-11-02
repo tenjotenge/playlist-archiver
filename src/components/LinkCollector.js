@@ -18,7 +18,7 @@ function LinkCollector() {
 
   // Trigger the API call when the user clicks the button using fetch
   const handleDownload = () => {
-    fetch('https://playlist-archiver-six.vercel.app/api/exportSpotifyPlaylist', {
+    fetch('/api/exportSpotifyPlaylist', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
