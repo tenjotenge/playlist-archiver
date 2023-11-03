@@ -1,4 +1,10 @@
 /* src/components/Banner.module.css */
+@font-face {
+  font-family: 'BroadwayD';
+  src: url('/fonts/BroadwayD.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .banner-container {
   color: black; 
@@ -11,11 +17,13 @@
 
 .banner-heading {
   font-size: 60px;
-  font-family: 'Tangerine', cursive;
+  font-family: 'BroadwayD', 'Tangerine', cursive;
+  color: #e63df5;
 }
 
 .banner-text {
   font-size: 40px;
-  font-family: 'Tangerine', cursive;
+  font-family: 'BroadwayD', 'Tangerine', cursive;
   text-decoration: none;
+  color: #e63df5;
 }

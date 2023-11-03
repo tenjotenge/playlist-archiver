@@ -1,5 +1,12 @@
 /* PresentationButtons.module.css */
-/* PresentationButtons.module.css */
+
+@font-face {
+    font-family: 'BroadwayD';
+    src: url('/fonts/BroadwayD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 .buttons-container {
     display: flex;
     justify-content: space-between; /* Use space-between to add space between the buttons */
@@ -9,7 +16,7 @@
   
   .presentation-button {
     padding: 10px 20px;
-    background-color: #007bff; /* #e63df5 for pink */
+    background-color: #007bff; /* #e63df5 for pink, #007bff for og blue */
     color: #fff;
     border: none;
     border-radius: 20px;
