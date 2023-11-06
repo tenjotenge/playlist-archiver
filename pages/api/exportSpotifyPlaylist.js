@@ -12,21 +12,22 @@ export default async (req, res) => {
   const { playlistURL } = req.body;
 
   try {
-    // Set up authentication and obtain an access token
+    // Step 1: Set up authentication and obtain an access token
     const data = await spotifyApi.clientCredentialsGrant();
     spotifyApi.setAccessToken(data.body.access_token);
 
-    // Extract the playlist ID from the URL
+    // Step 2: Extract the playlist ID from the URL
     const playlistId = playlistURL.match(/playlist\/(\w+)/)[1];
 
-    // Fetch the playlist data
+    // Step 3: Fetch the playlist data
     const playlistInfo = await spotifyApi.getPlaylist(playlistId);
     const playlistName = playlistInfo.body.name; // Get the playlist name
-    console.log(`${playlistName} has been fetched.`)
+    console.log(`${playlistName} has been fetched.`);
 
-    // Fetch the playlist tracks
+    // Step 4: Fetch the playlist tracks
     const playlistTracks = await spotifyApi.getPlaylistTracks(playlistId);
 
+    // Step 5: Transform the data into the desired format
     const playlistData = playlistTracks.body.items.map((item) => ({
       title: item.track.name,
       album: item.track.album.name,
@@ -36,13 +37,17 @@ export default async (req, res) => {
 
     const fileName = `public/downloads/playlist.json`;
 
-    // Save the playlist data to a JSON file with the playlist name
+    // Step 6: Save the playlist data to a JSON file with the playlist name
     await fs.writeFile(fileName, JSON.stringify(playlistData, null, 2));
     console.log(`${playlistName} Playlist data saved to ${fileName}`);
 
+    // Step 7: Send a success response
     res.status(200).json({ message: `Playlist data saved to ${fileName}` });
   } catch (err) {
+    // Error handling
     console.error(err);
-    res.status(500).json({ error: 'Playlist archiving failed' });
+
+    // Step 8: Send an error response
+    res.status(500).json({ error: 'Playlist archiving failed', errorMessage: err.message });
   }
 };
