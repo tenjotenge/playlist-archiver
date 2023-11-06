@@ -35,7 +35,7 @@ export default async (req, res) => {
       spotifyLink: item.track.external_urls.spotify,
     }));
 
-    const fileName = `public/downloads/playlist.json`;
+    const fileName = `downloads/playlist.json`;
 
     // Step 6: Save the playlist data to a JSON file with the playlist name
     await fs.writeFile(fileName, JSON.stringify(playlistData, null, 2));
