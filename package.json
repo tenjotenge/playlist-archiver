@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.8.0",
     "axios": "^1.5.0",
     "blob-polyfill": "^7.0.20220408",
     "classnames": "^2.3.2",
@@ -19,6 +20,7 @@
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "spotify-web-api-node": "^5.0.2"
+    "spotify-web-api-node": "^5.0.2",
+    "web3modal": "^1.9.12"
   }
 }
