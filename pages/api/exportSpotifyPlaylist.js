@@ -18,7 +18,11 @@ export default async (req, res) => {
     spotifyApi.setAccessToken(data.body.access_token);
 
     // Step 2: Extract the playlist ID from the URL
-    const playlistId = playlistURL.match(/playlist\/(\w+)/)[1];
+    const playlistIdMatch = playlistURL.match(/playlist\/(\w+)/);
+    if (!playlistIdMatch) {
+      throw new Error('Invalid playlist URL');
+    }
+    const playlistId = playlistIdMatch[1];
 
     // Step 3: Fetch the playlist data
     const playlistInfo = await spotifyApi.getPlaylist(playlistId);
@@ -43,14 +47,13 @@ export default async (req, res) => {
     const filePath = path.join(process.cwd(), 'downloads', fileName);
     await fs.writeFile(filePath, JSON.stringify(playlistData, null, 2));
 
-    // Step 6: Send the file name as a JSON response
+    // Send the file name as a JSON response
     res.status(200).json({ fileName });
-
   } catch (err) {
     // Error handling
     console.error(err);
 
-    // Step 7: Send an error response
+    // Send an error response
     res.status(500).json({ error: 'Playlist archiving failed', errorMessage: err.message });
   }
 };
