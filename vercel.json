@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@vercel/node" }],
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/api/exportSpotifyPlaylist",
+      "dest": "/api/exportSpotifyPlaylist.js"
+    }
+  ],
+  "public": {
+    "downloads": "downloads"
+  }
+}

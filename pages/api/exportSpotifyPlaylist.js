@@ -1,5 +1,6 @@
 import SpotifyWebApi from 'spotify-web-api-node';
 import fs from 'fs/promises';
+import path from 'path';
 
 require('dotenv').config();
 
@@ -35,19 +36,21 @@ export default async (req, res) => {
       spotifyLink: item.track.external_urls.spotify,
     }));
 
-    const fileName = `public/downloads/playlist.json`;
+    // Construct the filename with the playlist name
+    const fileName = `${playlistName}-pl.json`;
 
-    // Step 6: Save the playlist data to a JSON file with the playlist name
-    await fs.writeFile(fileName, JSON.stringify(playlistData, null, 2));
-    console.log(`${playlistName} Playlist data saved to ${fileName}`);
+    // Write the playlist data to the server's downloads directory
+    const filePath = path.join(process.cwd(), 'downloads', fileName);
+    await fs.writeFile(filePath, JSON.stringify(playlistData, null, 2));
 
-    // Step 7: Send a success response
-    res.status(200).json({ message: `Playlist data saved to ${fileName}` });
+    // Step 6: Send the file name as a JSON response
+    res.status(200).json({ fileName });
+
   } catch (err) {
     // Error handling
     console.error(err);
 
-    // Step 8: Send an error response
+    // Step 7: Send an error response
     res.status(500).json({ error: 'Playlist archiving failed', errorMessage: err.message });
   }
 };

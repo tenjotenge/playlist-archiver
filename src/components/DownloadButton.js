@@ -4,15 +4,17 @@ import styles from './DownloadButton.module.css';
 
 const cx = classNames.bind(styles);
 
-function DownloadButton() {
-  const downloadUrl = '/public/downloads/playlist.json';
-
+function DownloadButton({ fileName }) {
+  
   const handleDownload = () => {
-    const url = '/downloads/playlist.json'; // Adjust the URL as needed
-    const anchor = document.createElement('a');
-    anchor.href = url;
-    anchor.download = 'playlist';
-    anchor.click();
+    if (fileName) {
+      const url = `/downloads/${fileName}`;
+      const downloadFileName = fileName.replace('.json', ''); // Remove the .json extension
+      const anchor = document.createElement('a');
+      anchor.href = url;
+      anchor.download = downloadFileName;
+      anchor.click();
+    }
   };
 
   return (
@@ -23,3 +25,4 @@ function DownloadButton() {
 }
 
 export default DownloadButton;
+

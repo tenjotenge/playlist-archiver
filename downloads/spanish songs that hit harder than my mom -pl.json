@@ -1,0 +1,602 @@
+[
+  {
+    "title": "No Me Queda Más",
+    "album": "Amor Prohibido",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/1r28ZDlVxz24Rmy8Sq9REY"
+  },
+  {
+    "title": "Una Vaina Loca",
+    "album": "Una Vaina Loca",
+    "artist": "Fuego",
+    "spotifyLink": "https://open.spotify.com/track/3zb856RMKFjdvWre0TKcmA"
+  },
+  {
+    "title": "Me Gustas Tu",
+    "album": "Próxima Estación: Esperanza",
+    "artist": "Manu Chao",
+    "spotifyLink": "https://open.spotify.com/track/6b37xrsNCWYIUphFBazqD6"
+  },
+  {
+    "title": "Desesperada",
+    "album": "Mujer",
+    "artist": "Marta Sánchez",
+    "spotifyLink": "https://open.spotify.com/track/20WaSPMyeIO7NntPpn1FM5"
+  },
+  {
+    "title": "Suerte (Whenever, Wherever)",
+    "album": "Laundry Service",
+    "artist": "Shakira",
+    "spotifyLink": "https://open.spotify.com/track/3TY1PFZXmYeiLcXygB74My"
+  },
+  {
+    "title": "Loca (feat. El Cata)",
+    "album": "Sale el Sol",
+    "artist": "Shakira, El Cata",
+    "spotifyLink": "https://open.spotify.com/track/42k1KeBehAd83lrGt1okiC"
+  },
+  {
+    "title": "Corazón Sin Cara",
+    "album": "Prince Royce",
+    "artist": "Prince Royce",
+    "spotifyLink": "https://open.spotify.com/track/0u4N6w5lBw5xMrzJitRWUo"
+  },
+  {
+    "title": "Te Extraño - Bachata Version",
+    "album": "Xtreme",
+    "artist": "Xtreme",
+    "spotifyLink": "https://open.spotify.com/track/2SZ8NcII0WHSZaXyFT39Zn"
+  },
+  {
+    "title": "Amor Prohibido",
+    "album": "Amor Prohibido",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/1kCewNSs909Xj1naXr36X8"
+  },
+  {
+    "title": "Adiós Amor",
+    "album": "Adiós Amor",
+    "artist": "Christian Nodal",
+    "spotifyLink": "https://open.spotify.com/track/3OQXAp3uGQvkPi4DAMaM5p"
+  },
+  {
+    "title": "Si Una Vez",
+    "album": "Amor Prohibido",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/3zLQtoEeXA6Lr1sNrbyYbs"
+  },
+  {
+    "title": "Me Gusta Todo De Ti",
+    "album": "Me Gusta Todo De Ti",
+    "artist": "Banda El Recodo",
+    "spotifyLink": "https://open.spotify.com/track/6FiG43Z2qQRLxwbiltD7kk"
+  },
+  {
+    "title": "Mayores",
+    "album": "Mayores",
+    "artist": "Becky G, Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/7JNh1cfm0eXjqFVOzKLyau"
+  },
+  {
+    "title": "Beso",
+    "album": "Beso",
+    "artist": "CNCO",
+    "spotifyLink": "https://open.spotify.com/track/1L9UBn6F0iY4HZeeH4teDZ"
+  },
+  {
+    "title": "Todo Me Gusta De Ti",
+    "album": "Destilando Amor",
+    "artist": "Aaron Y Su Grupo Ilusion",
+    "spotifyLink": "https://open.spotify.com/track/5gUoppDphfYsIiguGr5drh"
+  },
+  {
+    "title": "Te Quiero",
+    "album": "Te Quiero",
+    "artist": "Flex",
+    "spotifyLink": "https://open.spotify.com/track/1Z4IqxukC6Yuer0nK7rC2R"
+  },
+  {
+    "title": "Oye Mi Canto",
+    "album": "N.O.R.E. Y La Familia",
+    "artist": "N.O.R.E., Daddy Yankee, Nina Sky, Gemstar, Big Mato",
+    "spotifyLink": "https://open.spotify.com/track/3J6vrRMz6EfwH2sgYiyNhc"
+  },
+  {
+    "title": "Reggaetón Lento (Bailemos)",
+    "album": "Primera Cita",
+    "artist": "CNCO",
+    "spotifyLink": "https://open.spotify.com/track/3AEZUABDXNtecAOSC1qTfo"
+  },
+  {
+    "title": "Hey DJ",
+    "album": "CNCO",
+    "artist": "CNCO, Yandel",
+    "spotifyLink": "https://open.spotify.com/track/1XgpK29CGGjZnxPYkiRbh4"
+  },
+  {
+    "title": "Baila Esta Cumbia",
+    "album": "La Leyenda (Version Super Deluxe)",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/3lFGBrRWUxpTfhhq6lGBRw"
+  },
+  {
+    "title": "Como La Flor",
+    "album": "Dreaming Of You",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/5ubqSAc9LxUS2CsMHcA4kF"
+  },
+  {
+    "title": "Yo Perreo Sola",
+    "album": "YHLQMDLG",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/0SqqAgdovOE24BzxIClpjw"
+  },
+  {
+    "title": "Imitadora",
+    "album": "Golden",
+    "artist": "Romeo Santos",
+    "spotifyLink": "https://open.spotify.com/track/6r46lnXFbE9fr2d3KNaGbe"
+  },
+  {
+    "title": "Espejeando",
+    "album": "Amor Platónico",
+    "artist": "Los Tucanes De Tijuana",
+    "spotifyLink": "https://open.spotify.com/track/6mEp3WgXcjJw5yjG2C4GuH"
+  },
+  {
+    "title": "La Carcacha",
+    "album": "Lo Mejor De…",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/6ylsnFJHjC6g68EOlMpjnq"
+  },
+  {
+    "title": "Cumbia Con La Luna",
+    "album": "Cumbias Sin Control",
+    "artist": "Control",
+    "spotifyLink": "https://open.spotify.com/track/0mgTAs7MVas9SyGNQeKFJp"
+  },
+  {
+    "title": "La Romana",
+    "album": "X 100PRE",
+    "artist": "Bad Bunny, El Alfa",
+    "spotifyLink": "https://open.spotify.com/track/1khmgu0pveJbkbpbkyvcQv"
+  },
+  {
+    "title": "X (feat. Maluma & Ozuna) - Remix",
+    "album": "X (feat. Maluma & Ozuna) [Remix]",
+    "artist": "Nicky Jam, J Balvin, Maluma, Ozuna",
+    "spotifyLink": "https://open.spotify.com/track/6JjPBQfI2Y8nIjnm65X6Pw"
+  },
+  {
+    "title": "Ven Conmigo",
+    "album": "Selena: The Series Soundtrack",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/1Ivebeb1orqVsI33fU0bsc"
+  },
+  {
+    "title": "Jugaste y Sufrí",
+    "album": "Corta Venas",
+    "artist": "Eslabon Armado, DannyLux",
+    "spotifyLink": "https://open.spotify.com/track/3NqBxTOMCJ3zW9CIP51td4"
+  },
+  {
+    "title": "Ando Más Que Mal",
+    "album": "Corta Venas",
+    "artist": "Eslabon Armado",
+    "spotifyLink": "https://open.spotify.com/track/2uVW9s3bC14wp15d3Ma6EO"
+  },
+  {
+    "title": "Como Yo Le Doy",
+    "album": "Latino 59 presenta: Bailando (Salsa Bachata Merengue Urbano Reggaeton Dembow Fitness)",
+    "artist": "Pitbull, Don Miguelo",
+    "spotifyLink": "https://open.spotify.com/track/7ynuf6rSNgiMDyDzzhIDNB"
+  },
+  {
+    "title": "Me Siento Perdido",
+    "album": "Corta Venas",
+    "artist": "Eslabon Armado",
+    "spotifyLink": "https://open.spotify.com/track/1MWEsvmtNneecpUrSgSnz8"
+  },
+  {
+    "title": "Lo Que Construimos",
+    "album": "Hasta la Raíz (Edición Especial)",
+    "artist": "Natalia Lafourcade",
+    "spotifyLink": "https://open.spotify.com/track/5wWxUdgn2OugIOvLJOdreH"
+  },
+  {
+    "title": "Tutu",
+    "album": "Tutu",
+    "artist": "Camilo, Pedro Capó",
+    "spotifyLink": "https://open.spotify.com/track/1nocRtwyNPVtGcIJqfgdzZ"
+  },
+  {
+    "title": "Chantaje (feat. Maluma)",
+    "album": "El Dorado",
+    "artist": "Shakira, Maluma",
+    "spotifyLink": "https://open.spotify.com/track/6mICuAdrwEjh6Y6lroV2Kg"
+  },
+  {
+    "title": "DÁKITI",
+    "album": "DÁKITI",
+    "artist": "Bad Bunny, Jhayco",
+    "spotifyLink": "https://open.spotify.com/track/47EiUVwUp4C9fGccaPuUCS"
+  },
+  {
+    "title": "Rabiosa (feat. El Cata)",
+    "album": "Sale el Sol",
+    "artist": "Shakira, El Cata",
+    "spotifyLink": "https://open.spotify.com/track/19t0Z7qsoV6A1CGJVYRnjm"
+  },
+  {
+    "title": "Con Calma",
+    "album": "Con Calma",
+    "artist": "Daddy Yankee, Snow",
+    "spotifyLink": "https://open.spotify.com/track/5w9c2J52mkdntKOmRLeM2m"
+  },
+  {
+    "title": "Yo Voy (feat. Daddy Yankee)",
+    "album": "Motivando a la Yal",
+    "artist": "Zion & Lennox",
+    "spotifyLink": "https://open.spotify.com/track/5gflgO9EPbIBf16n5TKnQS"
+  },
+  {
+    "title": "Loba",
+    "album": "She Wolf (Expanded Edition)",
+    "artist": "Shakira",
+    "spotifyLink": "https://open.spotify.com/track/1fPCGREltHJuV3axEPydLp"
+  },
+  {
+    "title": "Nuestra Canción",
+    "album": "Caja de Música",
+    "artist": "Monsieur Periné, Vicente Garcia",
+    "spotifyLink": "https://open.spotify.com/track/5reQI13tWWYDLMrGcUF4Mk"
+  },
+  {
+    "title": "Gasolina",
+    "album": "Barrio Fino (Bonus Track Version)",
+    "artist": "Daddy Yankee",
+    "spotifyLink": "https://open.spotify.com/track/6jEZLz3YpnEBRpVkv35AmP"
+  },
+  {
+    "title": "La Novelita",
+    "album": "Generation Next",
+    "artist": "Aventura",
+    "spotifyLink": "https://open.spotify.com/track/0UuMzFglgjKnYuAmkICf1P"
+  },
+  {
+    "title": "Can't Remember to Forget You",
+    "album": "Can't Remember to Forget You",
+    "artist": "Shakira, Rihanna",
+    "spotifyLink": "https://open.spotify.com/track/0BBj0SW3vef8UNzTg4lwH9"
+  },
+  {
+    "title": "Un Beso",
+    "album": "God's Project",
+    "artist": "Aventura",
+    "spotifyLink": "https://open.spotify.com/track/1SaEt8dwTuLDzenUu5BqI6"
+  },
+  {
+    "title": "Vegas (I Wanna Ride)",
+    "album": "Vegas (I Wanna Ride)",
+    "artist": "Joseline Hernandez",
+    "spotifyLink": "https://open.spotify.com/track/2bId06MUsxJqO7LoeLZoq5"
+  },
+  {
+    "title": "Chale",
+    "album": "Chale",
+    "artist": "Eden Muñoz",
+    "spotifyLink": "https://open.spotify.com/track/74WROFXsox6wkeUrEK2DS6"
+  },
+  {
+    "title": "Qué Maldición",
+    "album": "Qué Maldición",
+    "artist": "Banda MS de Sergio Lizárraga, Snoop Dogg",
+    "spotifyLink": "https://open.spotify.com/track/2RxC2peY3FtrurYmbbmanr"
+  },
+  {
+    "title": "Shaky Shaky",
+    "album": "Shaky Shaky",
+    "artist": "Daddy Yankee",
+    "spotifyLink": "https://open.spotify.com/track/7gcMKL3lnDxsp4bIXyv6Zk"
+  },
+  {
+    "title": "Colapso",
+    "album": "Hasta el Fin Del Mundo",
+    "artist": "Kevin Kaarl",
+    "spotifyLink": "https://open.spotify.com/track/7dT9D6117e5DbhnKxDLNW9"
+  },
+  {
+    "title": "Mi Razón De Ser",
+    "album": "Dany, Te Dedico Esta Canción Con Todo Mi Corazón",
+    "artist": "Banda Sinaloense MS de Sergio Lizárraga",
+    "spotifyLink": "https://open.spotify.com/track/7EDEbNBsxgsTOfrOifN37a"
+  },
+  {
+    "title": "Moscow Mule",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/6Xom58OOXk2SoU711L2IXO"
+  },
+  {
+    "title": "Me Porto Bonito",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny, Chencho Corleone",
+    "spotifyLink": "https://open.spotify.com/track/6Sq7ltF9Qa7SNFBsV5Cogx"
+  },
+  {
+    "title": "Tití Me Preguntó",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ"
+  },
+  {
+    "title": "Me Fui de Vacaciones",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/28GCbKgjlVD9eDmasGbe0T"
+  },
+  {
+    "title": "Aserejé",
+    "album": "Ritmo Latino",
+    "artist": "Grupo Arenas",
+    "spotifyLink": "https://open.spotify.com/track/6yCM4N4v44c3xoMORrhLwW"
+  },
+  {
+    "title": "Que Creías",
+    "album": "Entre A Mi Mundo",
+    "artist": "Selena",
+    "spotifyLink": "https://open.spotify.com/track/2db2QrUOQsVawxaQmgcmeG"
+  },
+  {
+    "title": "Caro",
+    "album": "X 100PRE",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/6it15CsDlkqB7N4lF0C1qM"
+  },
+  {
+    "title": "Hips Don't Lie (feat. Wyclef Jean)",
+    "album": "Oral Fixation, Vol. 2 (Expanded Edition)",
+    "artist": "Shakira, Wyclef Jean",
+    "spotifyLink": "https://open.spotify.com/track/3ZFTkvIE7kyPt6Nu3PEa7V"
+  },
+  {
+    "title": "Por un Segundo",
+    "album": "The Last",
+    "artist": "Aventura",
+    "spotifyLink": "https://open.spotify.com/track/2MioxSroS0g1mi24LLfcnq"
+  },
+  {
+    "title": "Hilito",
+    "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+    "artist": "Romeo Santos",
+    "spotifyLink": "https://open.spotify.com/track/6CKlQHQIxhWtq7MnEJ6QCz"
+  },
+  {
+    "title": "Mi Gente (feat. Beyoncé)",
+    "album": "Mi Gente (feat. Beyoncé)",
+    "artist": "J Balvin, Willy William, Beyoncé",
+    "spotifyLink": "https://open.spotify.com/track/0GzmMQizDeA2NVMUaZksv0"
+  },
+  {
+    "title": "Candy",
+    "album": "Love And Sex",
+    "artist": "Plan B",
+    "spotifyLink": "https://open.spotify.com/track/2ctjDCCg1wHoQSjIJ8p6U4"
+  },
+  {
+    "title": "I'm Sorry",
+    "album": "Love & Hate",
+    "artist": "Aventura",
+    "spotifyLink": "https://open.spotify.com/track/2QnmlK1ezVLg83Yc9OJHkk"
+  },
+  {
+    "title": "Promise (feat. Usher)",
+    "album": "Fórmula Vol. 1 (Deluxe Edition)",
+    "artist": "Romeo Santos, USHER",
+    "spotifyLink": "https://open.spotify.com/track/0jr6tT2vc4cIFPHb6wufG3"
+  },
+  {
+    "title": "Obsesion",
+    "album": "We Broke The Rules",
+    "artist": "Aventura, Judy Santos",
+    "spotifyLink": "https://open.spotify.com/track/65H6t1WQBim6q93yM8fEwn"
+  },
+  {
+    "title": "Dos Locos",
+    "album": "Confesiones",
+    "artist": "Monchy & Alexandra",
+    "spotifyLink": "https://open.spotify.com/track/3mx8WfEOjeUB1a0fpFxQmi"
+  },
+  {
+    "title": "Si No Es Contigo",
+    "album": "Mi Vicio Más Grande",
+    "artist": "Banda El Recodo",
+    "spotifyLink": "https://open.spotify.com/track/6zwhKdzJ4NXdY4HLU7pjns"
+  },
+  {
+    "title": "Canalla",
+    "album": "Utopia",
+    "artist": "Romeo Santos, El Chaval de la Bachata",
+    "spotifyLink": "https://open.spotify.com/track/4XEXrp37kZXpQTB2r5vWbS"
+  },
+  {
+    "title": "Efecto",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+  },
+  {
+    "title": "Andrea",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny, Buscabulla",
+    "spotifyLink": "https://open.spotify.com/track/44XjoNvtwevktFKjvVe1vH"
+  },
+  {
+    "title": "Después de la Playa",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/1dm6z1fWB0cErMszU25dy2"
+  },
+  {
+    "title": "Un Ratito",
+    "album": "Un Verano Sin Ti",
+    "artist": "Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/5CzixCxDkRXX9mScCmah8O"
+  },
+  {
+    "title": "No Se Va",
+    "album": "No Se Va",
+    "artist": "Grupo Frontera",
+    "spotifyLink": "https://open.spotify.com/track/5TXLMRrIet3CQxkyBZc3yE"
+  },
+  {
+    "title": "Safaera",
+    "album": "YHLQMDLG",
+    "artist": "Bad Bunny, Jowell & Randy, Ñengo Flow",
+    "spotifyLink": "https://open.spotify.com/track/2DEZmgHKAvm41k4J3R2E9Y"
+  },
+  {
+    "title": "Tonta",
+    "album": "25 Exitos Vol. 1 (USA)",
+    "artist": "Grupo Mojado",
+    "spotifyLink": "https://open.spotify.com/track/1A1yn53ZypVPUcV4W54j8A"
+  },
+  {
+    "title": "La Cobra",
+    "album": "Veinte Años De Sabrosura",
+    "artist": "Fito Olivares y Su Grupo",
+    "spotifyLink": "https://open.spotify.com/track/3aSYVIS5nC3hrFK368flZt"
+  },
+  {
+    "title": "La Inconforme",
+    "album": "Las Mejores Cumbias Sonideras",
+    "artist": "Grupo G",
+    "spotifyLink": "https://open.spotify.com/track/0hIWFtRapuJrfDCovuGww9"
+  },
+  {
+    "title": "Pasito Weperron",
+    "album": "Pasito Weperron",
+    "artist": "Emce Ricko, Dj Exon Beat",
+    "spotifyLink": "https://open.spotify.com/track/7vvEITVQAQNR9sqWfkdep1"
+  },
+  {
+    "title": "Rompe",
+    "album": "Barrio Fino En Directo",
+    "artist": "Daddy Yankee",
+    "spotifyLink": "https://open.spotify.com/track/4Xtlw8oXkIOvzV7crUBKeZ"
+  },
+  {
+    "title": "Si No Le Contesto",
+    "album": "House Of Pleasure",
+    "artist": "Plan B",
+    "spotifyLink": "https://open.spotify.com/track/3XaWuYsTtnkzCSBr0RmROc"
+  },
+  {
+    "title": "Odio (feat. Drake)",
+    "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+    "artist": "Romeo Santos, Drake",
+    "spotifyLink": "https://open.spotify.com/track/1iLv1ieT9BZ3qsti9yTCnG"
+  },
+  {
+    "title": "Propuesta Indecente",
+    "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+    "artist": "Romeo Santos",
+    "spotifyLink": "https://open.spotify.com/track/5PycBIeabfvX3n9ILG7Vrv"
+  },
+  {
+    "title": "Rechazame",
+    "album": "Prince Royce",
+    "artist": "Prince Royce",
+    "spotifyLink": "https://open.spotify.com/track/07p0kLnvfQQ2bLujHyzSGK"
+  },
+  {
+    "title": "Suave",
+    "album": "Suave",
+    "artist": "El Alfa",
+    "spotifyLink": "https://open.spotify.com/track/6NtlO37F4rjD1Z11jnV1rJ"
+  },
+  {
+    "title": "Baila Morena (with Luny Tunes, Noriega) - Remix",
+    "album": "Baila Morena (Reggaeton Mix)",
+    "artist": "Hector & Tito, Luny Tunes, Noriega",
+    "spotifyLink": "https://open.spotify.com/track/4qbi9JDziBh3cxi9SFUbeu"
+  },
+  {
+    "title": "Dale Don Dale",
+    "album": "The Last Don",
+    "artist": "Don Omar",
+    "spotifyLink": "https://open.spotify.com/track/1PZrHbJjt5t7dP9OGRxcD0"
+  },
+  {
+    "title": "La Mamá de la Mamá (feat. El Cherry Scom)",
+    "album": "La Mamá de la Mamá (feat. El Cherry Scom)",
+    "artist": "El Alfa, CJ, Chael Produciendo, El Cherry Scom",
+    "spotifyLink": "https://open.spotify.com/track/2L95U6syP0bV3fkYYOzmiW"
+  },
+  {
+    "title": "Sobran Motivos",
+    "album": "Sobran Motivos",
+    "artist": "Conjunto Rienda Real, La Pocima Norteña",
+    "spotifyLink": "https://open.spotify.com/track/1uTHr7ij3eiDdUXvQfA5au"
+  },
+  {
+    "title": "Vai Soltando Pancadão - Beat do Pica Pau Maluco",
+    "album": "Vai Soltando Pancadão - Beat do Pica Pau Maluco",
+    "artist": "DJ Santos MEC, MC Tilbita, Mc Vaguin, MC Alekinho da ZO",
+    "spotifyLink": "https://open.spotify.com/track/2pEnQImOCJiCTvDv3Lu3aE"
+  },
+  {
+    "title": "Que Calor (feat. J Balvin & El Alfa)",
+    "album": "Que Calor (feat. J Balvin & El Alfa)",
+    "artist": "Major Lazer, J Balvin, El Alfa, Diplo",
+    "spotifyLink": "https://open.spotify.com/track/1RKZvaLj3UPhGjZkaIrFm7"
+  },
+  {
+    "title": "4K",
+    "album": "Dembow Worldwide Hits Teteo 42",
+    "artist": "El Alfa, Darell, Noriel",
+    "spotifyLink": "https://open.spotify.com/track/4Ex9FAh4a8HVlMRCPdzRWe"
+  },
+  {
+    "title": "Singapur",
+    "album": "El Androide",
+    "artist": "El Alfa, Chael Produciendo",
+    "spotifyLink": "https://open.spotify.com/track/5q7icrT1Wn8PHaePIjYYyg"
+  },
+  {
+    "title": "Fin de Semana",
+    "album": "Fin de Semana",
+    "artist": "Oscar Maydon, Junior H",
+    "spotifyLink": "https://open.spotify.com/track/6TBzRwnX2oYd8aOrOuyK1p"
+  },
+  {
+    "title": "Ella Baila Sola",
+    "album": "Ella Baila Sola",
+    "artist": "Eslabon Armado, Peso Pluma",
+    "spotifyLink": "https://open.spotify.com/track/3dnP0JxCgygwQH9Gm7q7nb"
+  },
+  {
+    "title": "PLEBADA",
+    "album": "PLEBADA",
+    "artist": "El Alfa, Peso Pluma",
+    "spotifyLink": "https://open.spotify.com/track/7uSLF2yhpjLlYBLtyPX3Lb"
+  },
+  {
+    "title": "QUE PRETENDES",
+    "album": "OASIS",
+    "artist": "J Balvin, Bad Bunny",
+    "spotifyLink": "https://open.spotify.com/track/25ZAibhr3bdlMCLmubZDVt"
+  },
+  {
+    "title": "MALA",
+    "album": "DUMMY BOY",
+    "artist": "6ix9ine, Anuel AA",
+    "spotifyLink": "https://open.spotify.com/track/4epHhc2lvhFYzMlKA23O3G"
+  },
+  {
+    "title": "MIA",
+    "album": "X 100PRE",
+    "artist": "Bad Bunny, Drake",
+    "spotifyLink": "https://open.spotify.com/track/3gE4eQH3K83Sght0ZLvuBK"
+  }
+]
