@@ -48,8 +48,8 @@ export default async (req, res) => {
     const fileName = `${playlistName}-pl.json`;
 
     // Write the playlist data to the server's downloads directory
-    const filePath = path.join(process.cwd(), 'downloads', fileName);
-    await fs.writeFile(filePath, JSON.stringify(playlistData, null, 2));
+    //const filePath = path.join(process.cwd(), 'downloads', fileName);
+    //await fs.writeFile(filePath, JSON.stringify(playlistData, null, 2));
 
     const dropboxFilePath = `/playlists/${fileName}`;
     const fileContent = await fs.readFile(filePath);
