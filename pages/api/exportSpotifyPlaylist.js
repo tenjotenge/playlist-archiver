@@ -13,6 +13,13 @@ const dropbox = new Dropbox({ accessToken: dropboxToken });
 
 export default async (req, res) => {
   const { playlistURL } = req.body;
+  
+  console.log('Request received:', {
+    method: req.method,
+    url: req.url,
+    headers: req.headers,
+    body: req.body,
+  });
 
   try {
     // Step 1: Set up authentication and obtain an access token
