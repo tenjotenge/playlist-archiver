@@ -1,6 +1,7 @@
 import SpotifyWebApi from 'spotify-web-api-node';
 import fs from 'fs/promises';
 import path from 'path';
+const { Dropbox } = require('dropbox');
 
 require('dotenv').config();
 
@@ -8,6 +9,9 @@ const spotifyApi = new SpotifyWebApi({
   clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
   clientSecret: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET,
 });
+
+const dropboxToken = process.env.DROPBOX_ACCESS_TOKEN;
+const dropbox = new Dropbox({ accessToken: dropboxToken });
 
 export default async (req, res) => {
   const { playlistURL } = req.body;
@@ -42,6 +46,7 @@ export default async (req, res) => {
 
     // Construct the filename with the playlist name
     const fileName = `${playlistName}-pl.json`;
+    
 
     // Write the playlist data to the server's downloads directory
     const filePath = path.join(process.cwd(), 'downloads', fileName);
@@ -49,6 +54,23 @@ export default async (req, res) => {
 
     // Send the file name as a JSON response
     res.status(200).json({ fileName });
+    const dropboxFilePath = `/playlists/${fileName}`;
+    const fileContent = await fs.readFile(filePath);
+
+    await dropbox.filesUpload({
+      path: dropboxFilePath,
+      contents: fileContent,
+    });
+
+    console.log(`Playlist data uploaded to Dropbox: ${dropboxFilePath}`);
+
+    // Optional: Delete the local file if needed
+    // await fs.unlink(filePath);
+
+    return {
+      success: true,
+      data: { message: `Playlist data uploaded to Dropbox: ${dropboxFilePath}` },
+    };
   } catch (err) {
     // Error handling
     console.error(err);
