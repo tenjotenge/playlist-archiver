@@ -1,6 +1,4 @@
 import SpotifyWebApi from 'spotify-web-api-node';
-import fs from 'fs/promises';
-import path from 'path';
 const { Dropbox } = require('dropbox');
 
 require('dotenv').config();
@@ -47,13 +45,11 @@ export default async (req, res) => {
     // Construct the filename with the playlist name
     const fileName = `${playlistName}-pl.json`;
 
-    // Write the playlist data to the server's downloads directory
-    const filePath = path.join(process.cwd(), 'downloads', fileName);
-    //await fs.writeFile(filePath, JSON.stringify(playlistData, null, 2));
+    // Convert playlist data to JSON string
+    const fileContent = JSON.stringify(playlistData, null, 2);
 
+    // Upload the file content to Dropbox
     const dropboxFilePath = `/playlists/${fileName}`;
-    const fileContent = await fs.readFile(filePath);
-
     await dropbox.filesUpload({
       path: dropboxFilePath,
       contents: fileContent,
