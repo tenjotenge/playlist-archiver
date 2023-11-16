@@ -33,7 +33,7 @@ const CreditCardForm = () => {
   return (
     <div className={cx('payment-container')}>
       <PaymentForm
-        applicationId="sandbox-sq0idb-cuAr6GdfGcn6miY7Y7JN_Q"
+        applicationId="sq0idp-oYFQYbcNpm0cLjDTsknQnQ"
         cardTokenizeResponseReceived={handleCardTokenizeResponse}
         locationId='XXXXXXXXXX'
       >
