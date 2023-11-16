@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import DownloadButton from './DownloadButton';
 import classNames from 'classnames/bind';
 import styles from './LinkCollector.module.css';
@@ -9,13 +9,12 @@ const cx = classNames.bind(styles);
 
 function LinkCollector() {
   const [playlistURL, setPlaylistURL] = useState('');
-  const [fileName, setFileName] = useState(null);
+  const [filePath, setFilePath] = useState(null);
 
   const handleChange = (event) => {
     setPlaylistURL(event.target.value);
   };
 
-  // Trigger the API call when the user clicks the button using fetch
   const handleDownload = () => {
     fetch('/api/exportSpotifyPlaylist', {
       method: 'POST',
@@ -26,20 +25,17 @@ function LinkCollector() {
         playlistURL,
       }),
     })
-      .then((response) => {
-        if (response.ok) {
-          return response.json(); // Parse the response as JSON
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          setFilePath(data.data.filePath);
+          console.log('Playlist archived successfully');
         } else {
-          throw new Error(`Error archiving playlist: ${response.status}`);
+          console.error('Error archiving playlist:', data.error);
         }
       })
-      .then((data) => {
-        // Set the fileName in the state
-        setFileName(data.fileName);
-        console.log('Playlist archived successfully');
-      })
       .catch((error) => {
-        console.error(error);
+        console.error('Network error:', error);
       });
   };
 
@@ -50,7 +46,7 @@ function LinkCollector() {
       </div>
       <div className={cx('buttons-container')}>
         <button className={cx('archive-button')} onClick={handleDownload}>Archive Playlist</button>
-        <DownloadButton fileName={fileName} />
+        <DownloadButton filePath={filePath} />
       </div>
       <PresentationButtons />
       <LinkBar />

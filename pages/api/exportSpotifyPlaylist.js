@@ -46,14 +46,11 @@ export default async (req, res) => {
 
     // Construct the filename with the playlist name
     const fileName = `${playlistName}-pl.json`;
-    
 
     // Write the playlist data to the server's downloads directory
     const filePath = path.join(process.cwd(), 'downloads', fileName);
     await fs.writeFile(filePath, JSON.stringify(playlistData, null, 2));
 
-    // Send the file name as a JSON response
-    res.status(200).json({ fileName });
     const dropboxFilePath = `/playlists/${fileName}`;
     const fileContent = await fs.readFile(filePath);
 
@@ -67,10 +64,14 @@ export default async (req, res) => {
     // Optional: Delete the local file if needed
     // await fs.unlink(filePath);
 
-    return {
+    // Send the file name as a JSON response
+    res.status(200).json({
       success: true,
-      data: { message: `Playlist data uploaded to Dropbox: ${dropboxFilePath}` },
-    };
+      data: {
+        message: `Playlist data uploaded to Dropbox: ${dropboxFilePath}`,
+        filePath: dropboxFilePath,
+      },
+    });
   } catch (err) {
     // Error handling
     console.error(err);
