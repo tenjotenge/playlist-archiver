@@ -22,6 +22,7 @@
     "react-dom": "18.2.0",
     "react-square-web-payments-sdk": "^3.2.1",
     "spotify-web-api-node": "^5.0.2",
+    "square": "^33.0.0",
     "web3modal": "^1.9.12"
   }
 }
