@@ -4,7 +4,7 @@ const { Readable } = require('stream');
 
 require('dotenv').config();
 
-const dropboxToken = process.env.DROPBOX_ACCESS_TOKEN;
+const dropboxToken = process.env.NEXT_PUBLIC_DROPBOX_ACCESS_TOKEN;
 const dropbox = new Dropbox({ accessToken: dropboxToken });
 
 export default async (req, res) => {

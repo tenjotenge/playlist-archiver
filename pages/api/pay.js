@@ -9,7 +9,7 @@ require('dotenv').config();
 //};
 
 const { paymentsApi } = new Client({
-  accessToken: process.env.SQUARE_ACCESS_TOKEN,
+  accessToken: process.env.NEXT_PUBLIC_SQUARE_ACCESS_TOKEN,
   environment: 'production'
 });
 
