@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './LinkCollector.module.css';
 import LinkBar from './LinkBar';
 import PresentationButtons from './PresentationButtons';
+import PaymentExampleButton from './PaymentExampleButton';
 
 const cx = classNames.bind(styles);
 
@@ -50,6 +51,7 @@ function LinkCollector() {
       </div>
       <PresentationButtons />
       <LinkBar />
+      <PaymentExampleButton />
     </div>
   );
 }
