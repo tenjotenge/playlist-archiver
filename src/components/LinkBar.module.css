@@ -1,6 +1,6 @@
 /* LinkBar.module.css */
 .link-bar {
-    background-color: #007bff; /* Change the background color to blue */
+    background-color: #8ADDCE; /* Change the background color to blue */
     padding: 10px;
     border-radius: 50px;
     display: flex;
@@ -21,7 +21,7 @@
   }
   
   .link-item {
-    background-color: #007bff; /* Change the background color to blue */
+    background-color: #8ADDCE; /* Change the background color to blue */
     padding: 5px 10px;
     border-radius: 10px;
     margin: 0 10px;
